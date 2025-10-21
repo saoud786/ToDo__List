@@ -1,0 +1,28 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+.main-container {
+  width: 400px;
+  padding: 20px;
+  border: 2px solid #333; /* 👈 adds border */
+  border-radius: 10px;    /* 👈 smooth corners */
+  background-color: #fff; /* 👈 makes box white */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* 👈 optional nice shadow */
+}
+li{
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+li::marker {
+  color: #007bff;       /* change bullet color */
+        /* make marker bigger */
+  content: "➜";        /* replace bullet with emoji or custom symbol */
+  margin-left: 10px;
+}
